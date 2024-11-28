@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             this.name = this.editTextUserName.text.toString();
             this.password = this.editTextPassword.text.toString();
 
-            if (this.name.isEmpty() && this.password.isEmpty()){
+            if (this.name.isEmpty() || this.password.isEmpty()){
                 this.editTextUserName.error = "Usuario obligatorio";
                 this.editTextPassword.error = "Contraseña obligatoria";
             } else {
